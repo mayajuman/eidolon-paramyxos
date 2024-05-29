@@ -414,8 +414,8 @@ fig2 <- ggarrange(GHVpatterns, NIVpatterns, labels = c("A", "B"),
 #ggsave("Fig2.png", width = 150, height = 234, units= "mm", bg="white")
 
 ggarrange(GHVsens, NIVsens, HEVsens, MOJVsens, labels = c("A", "B", "C", "D"), 
-                      align="v",ncol=1)
-#ggsave("suppFig2.png", width = 280, height = 600, units= "mm", bg="white")
+                      align="v",ncol=2,nrow=2)
+#ggsave("suppFig2.png", width = 400, height = 300, units= "mm", bg="white")
 
 suppfig4 <- ggarrange(HEVpatterns, MOJVpatterns, labels = c("A", "B"),
                       widths = c(0.7, 1), align="v",ncol=1)
